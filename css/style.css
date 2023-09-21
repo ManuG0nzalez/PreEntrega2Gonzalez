@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&family=Roboto&display=swap');
+
+
+/*General*/
+
+.indice {
+    list-style-type: georgian;
+    font-family: 'Reggae one';
+    display: flex;
+}
+
+.indice ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+}
+
+*{background-color: #2e2e2e;}
+
+body { font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: #734222;
+    text-align: center;
+}
+
+body header img {
+    width: 100%;
+    height: 300px;
+}
+
+/*index*/
+
+.content_index {
+    height: fit-content;
+    display: flex;
+}
+
+.izq-inicio {width: 33%;
+    background-color: blue;
+    
+}
+.sword {
+    
+    width: fit-content;
+    background-color: red;
+}
+
+
+
+/*linea de tiempo*/
+.juego h3{
+    font-family: 'IM Fell DW Pica', serif;
+    color: red;
+}
+
+/*Ubicaciones*/
+
+.lugar article {
+    width: 30%;
+}
+.lugar article img {
+    width: 100%;
+}
+.lugar article h4 {
+font-weight: 900;
+}
+
+/*Personajes*/
+
+/*main*/
+.zelda {
+    width: fit-content;
+}
+.zelda p {
+    text-align: center;
+    background-image: url(../assets/Personajes/zelda2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 320px;
+    width: 160px;
+    color: antiquewhite;
+}
+
+.link {
+    width: fit-content;
+}
+.link p{
+    text-align: center;
+    background-image: url(../assets/Personajes/Link.jpg);
+    background-size: contain;
+    height: 320px;
+    width: 160px;
+    background-repeat: no-repeat;
+    color: antiquewhite;
+}
+
+/* MEDIA QUERIES todas juntas */
+/*
+@media ( min-width: ) and ( max-width: ){
+
+}
