@@ -5,20 +5,20 @@
 
 /*General*/
 
-.indice {
+.container-fluid {
+    padding: 0;
+}
+.navbar {
     list-style-type: georgian;
     font-family: 'Reggae one';
     display: flex;
 }
 
-.indice ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
+.navbar-brand img{
+    height: 2rem;
+    background-color: #613c4e;
 }
 
-*{background-color: #2e2e2e;}
 
 body { font-family: 'Roboto', sans-serif;
 }
@@ -37,25 +37,131 @@ body header img {
 
 .content_index {
     height: fit-content;
-    display: flex;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(7, 1fr);
 }
 
-.izq-inicio {width: 33%;
-    background-color: blue;
-    
+.section_index_1 {
+    width: 100%;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
+
+.section_index_2 {
+    width: 100%;
+    justify-content: center;
+    grid-column-start: 5;
+    grid-column-end: 8;
+}
+
 .sword {
-    
+    grid-column-start: 4;
+    grid-column-end: 5;
     width: fit-content;
-    background-color: red;
+
 }
 
+.botoni1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.botoni2 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+
+.botoni3 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+}
+
+/*PRUEBA BARRA*/
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
 
 
 /*linea de tiempo*/
 .juego h3{
     font-family: 'IM Fell DW Pica', serif;
     color: red;
+}
+.grid-linea {
+    display: grid;
+    grid-row: auto;
+    grid-template-columns: repeat(6, minmax(0, 1fr))
+}
+.title-time {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    text-align: center;
+}
+.prologo {
+    grid-row: 2/ span 1;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    text-justify: distribute;
+    align-self: center;
+    text-align: justify;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.juego {
+    grid-row-start: 3;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    padding-left: 1em;
+    border-left: solid #734222;;
+}
+.juego img {
+    max-width: 60%;
+}
+
+.era {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-style: italic;
+    text-align: right;
+    padding-right: 1em;
+    border-right: solid #734222;
+}
+
+.Skyward {
+    grid-row: 4;
+}
+
+.Caos {
+    grid-row: 5;
+}
+
+.Prosperidad {
+    grid-row: 6;
+}
+
+.Minish {
+    grid-row: 7;
+}
+
+.Four {
+    grid-row: 8;
+}
+
+.Ocarina {
+    grid-row: 9;
 }
 
 /*Ubicaciones*/
@@ -99,8 +205,96 @@ font-weight: 900;
     color: antiquewhite;
 }
 
-/* MEDIA QUERIES todas juntas */
-/*
-@media ( min-width: ) and ( max-width: ){
+/*Media querys*/
+@media only screen and (max-width:500px) {
+    .container-fluid {background: #613c4e ;}
+    .nav-item a {color: #e24c70;}
+    .nav-item a:active {color: #c4acb4;}
+    body {font-size: 2em;}
+    * {background-color: #c4acb4;}
+    .navbar-brand {
+        background-color: #613c4e;
+    }
+    #navbarSupportedContent{
+        background-color: #613c4e;
+    }
+    .nav-item {
+        background-color: #613c4e;
+    }
+    .navbar-toggler-icon {
+        background-color: #613c4e;
+    }
+    .navbar-brand img{
+        background-color: #613c4e;
+    }
+    
+
+    
+}
+@media only screen and (min-width:501px) and (max-width:968px) {
+    .container-fluid {
+        background:   #3ca434  ;
+    }
+
+    .nav-item a {
+        color:  #e3d41b ;
+    }
+    .nav-item a:active{
+        color: #eef1ee ;
+    }
+    body {
+        font-size: 2em;
+    }
+    * {background-color: #9ccad9  ;}
+    .navbar-brand {
+        background-color: #3ca434;
+    }
+    #navbarSupportedContent{
+        background-color: #3ca434;
+    }
+    .nav-item {
+        background-color: #3ca434;
+    }
+    .navbar-toggler-icon {
+        background-color: #3ca434;
+    }
+    .navbar-brand img{
+        background-color: #3ca434;
+    }
+    
+}
+@media only screen and (min-width:969px) {
+    .container-fluid {
+        background: #43372e;  
+    }
+    .nav-item a:hover {
+        color: #f6a31b;
+    }
+    
+    .nav-item a {
+        color: #fccc0e;
+    }
+    .nav-item a:active{
+        color: #29dff8;
+    }
+    body {
+        font-size: 2em;
+    }
+    * {background-color: #c6b07e ;}
+    .navbar-brand {
+        background-color: #43372e;
+    }
+    #navbarSupportedContent{
+        background-color: #43372e;
+    }
+    .nav-item {
+        background-color: #43372e;
+    }
+    .navbar-toggler-icon {
+        background-color: #43372e;
+    }
+    .navbar-brand img{
+        background-color: #43372e;
+    }
 
 }

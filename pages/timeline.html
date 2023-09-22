@@ -8,52 +8,101 @@
     <link rel="stylesheet" href="../css/style.css">
     
     <title>Linea de Tiempo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
     <header>
         <!--encabezado-->
-        <nav class="indice">
-            <ul>
-                <li><a href="../index.html">Inicio
-                </a></li>
-                <li><a href="./personajes.html">personajes
-                </a></li>
-                <li><a href="./ubicaciones.html">ubicaciones
-                </a></li>
-                <li><a href="./aporte.html">aporte
-                </a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://zelda.nintendo.com/">
+                  <img src="/assets/trifuerza.png" alt="Trifuerza" width="30" height="24">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/timeline.html">Linea de Tiempo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/personajes.html">Personajes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/ubicaciones.html">Ubicaciones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/aporte.html">Aporte</a>
+                  </li>
+              </div>
+            </div>
+
         </nav>
         <h1>Linea de Tiempo</h1>
-        <img src="../assets/isla initia.jpg" alt="Fondo de pantalla">
+        <img src="/assets/isla initia.jpg" class="img-fluid" alt="Fondo de Pantalla">
         <p></p>
     </header>
     <main>
-        <h2>Creación</h2>
-        <p>
-            Las tres Diosas de Oro conocidas como Din, la diosa del poder, Nayru, la diosa de la sabiduría, y Farore, la diosa del valor, descendieron desde una nebulosa lejana sobre la caótica tierra que hoy conocemos como Hyrule y la dotan de vida. Din, con sus fuertes brazos de fuego, cultivó los campos y creó la tierra roja, por lo que era la responsable de la creación de la geografía de Hyrule. Nayru, esparció su sabiduría por la tierra y le dio el espíritu de ley al mundo. Farore, con su rica alma, produjo las formas de vida que respetarían la ley creada por Nayru.
-        </p>
-        <section>
-            <div class="juego" id="skyward">
-            <h3>Skyward Sword</h3>
-            <img src="" alt="Skyward-sword">
+        <section class="grid-linea">
+            <h2 class="text-center title-time">Creación del Mundo</h2>
+            <p class="prologo">
+            Las tres Diosas de Oro: Din, la diosa del poder, Nayru, la diosa de la sabiduría, y Farore, la diosa del valor, descendieron desde una nebulosa lejana sobre la caótica tierra que hoy conocemos como Hyrule y la dotaron de vida. Din, con sus fuertes brazos de fuego, cultivó los campos y creó la tierra roja. Nayru, esparció su sabiduría por la tierra y le dio el espíritu de ley al mundo. Farore, con su rica alma, produjo las formas de vida que respetarían la ley creada por Nayru.
+            </p>
+            <div class="juego">
+                <p class="evento-juego">Origen de la Tierra y el Cielo</p>
             </div>
-            <div class="juego" id="">
-                <h3>Skyward Sword</h3>
-                <img src="" alt="Skyward-sword">
+            <div class="era">
+                <h6>Creación
+                </h6>
             </div>
-            <div class="juego" id="">
+            <div class="juego Skyward">
                 <h3>Skyward Sword</h3>
-                <img src="" alt="Skyward-sword">
+                <img src="/assets/Linea de Tiempo/skyward-sword.png" alt="Skyward-sword">
+                <p class="evento-juego">La guerra ancestral, la reencarnación de la diosa Hylia y el retorno a la superficie terrestre</p>
             </div>
-            <div class="juego" id="">
-                <h3>Skyward Sword</h3>
-                <img src="" alt="Skyward-sword">
+            <div class="era Skyward">
+                <h6>Era de la Diosa Hylia
+                </h6>
+                <h6>Era de los cielos
+                </h6>
+            </div>
+            <div class="juego Caos">
+                <p class="evento-juego">El Reino Sagrado es sellado</p>
+            </div>
+            <div class="era Caos">
+                <h6>Era del Caos
+                </h6>
+            </div>
+            <div class="juego Prosperidad">
+                <p class="evento-juego">Fundación del Reino de Hyrule</p>
+            </div>
+            <div class="era Prosperidad">
+                <h6>Era de la Prosperidad
+                </h6>
+            </div>
+            <div class="juego Minish">
+                <h3>The Minish Cap</h3>
+                <img src="/assets/Linea de Tiempo/Minish cap.jpeg" alt="Minish Cap">
+                <p class="evento-juego"></p>
+            </div>
+            <div class="juego Four">
+                <h3>Four Swords</h3>
+                <img src="/assets/Linea de Tiempo/four swords.jpeg" alt="Four-Swords">
+            </div>
+            <div class="juego Ocarina">
+                <h3>Ocarina of Time</h3>
+                <img src="/assets/Linea de Tiempo/Ocarina of time.jpg" alt="Ocarina-of-Time">
             </div>
         </section>
     </main>
     <footer>
         
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 </html>
